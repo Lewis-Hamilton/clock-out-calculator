@@ -4,9 +4,11 @@ function calc()
   var f2 = document.getElementById('f2').value;
   var f3 = document.getElementById('f3').value;
 
-  document.getElementById('f4').value = f3 - f2;
-  document.getElementById('f5').value = f4 + f1;
-  document.getElementById('f6').value = f5 + 8;
+  var f4 = f3 - f2;
+  var f5 = f4 + f1;
+  var f6 = f5 + 8;
+
+  document.getElementById('f7').value = f6;
 }
 
 
