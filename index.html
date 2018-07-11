@@ -2,25 +2,26 @@
   <html>
   <head>
     <title>Clock Out Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   </head>
   <body>
   <a>
     Clock in time:
-    <input type = "time" id = "f1" min="1:00" max="12:00"/>
+    <input type="text" class="timepicker">
 
     Clock out lunch time:
-    <input type = "time" id = "f2" min="1:00" max="12:00"/>
+    <input type="text" class="timepicker">
 
     Clock in lunch time:
-    <input type = "time" id = "f3" min="1:00" max="12:00"/>
+    <input type="text" class="timepicker">
 
 <button onclick="calc();"></button>
 
     Your Clock out time is:
     <output type = "time" id = "f6"></output>
   </a>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type = "text/javascript" src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
   </body>
   </html>
