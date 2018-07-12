@@ -20,11 +20,19 @@ function calc()
   var clockOutMealTotal   = Number(clockOutMealMin) + Number(clockOutMealHourMin);
   var clockInMealTotal    = Number(clockInMealMin) + Number(clockInMealHourMin);
 
-  // document.getElementById('clockOut').value = f6;
+  var clockOutMin         = clockInMinTotal + 480;
+  var mealTime            = clockInMealTotal - clockOutMealTotal;
+  var clockOutMinFinal    = mealTime + clockOutMin;
 
-  console.log(clockInMinTotal);
-  console.log(clockOutMealTotal);
-  console.log(clockInMealTotal);
+  var clockOutHour = parseInt(clockOutMinFinal / 60);
+  var clockOutMin = clockOutMinFinal % 60;
+
+  var clockOutHourFinal = clockOutHour - 12;
+
+  var clockOutTime = clockOutHourFinal + ":" + clockOutMin;
+
+  document.getElementById('hh').value = clockOutTime;
+
 }
 
 $(document).ready(function(){
