@@ -16,13 +16,15 @@ function calc()
   var clockOutMealMin     = clockOutMeal.slice(3, 6);
   var clockInMealMin      = clockInMeal.slice(3, 6);
 
-
+  var clockInMinTotal     = Number(clockInHourMin) + Number(clockInMin );
+  var clockOutMealTotal   = Number(clockOutMealMin) + Number(clockOutMealHourMin);
+  var clockInMealTotal    = Number(clockInMealMin) + Number(clockInMealHourMin);
 
   // document.getElementById('clockOut').value = f6;
 
-  console.log(clockInHourMin);
-  console.log(clockOutMealHourMin);
-  console.log(clockInMealHourMin);
+  console.log(clockInMinTotal);
+  console.log(clockOutMealTotal);
+  console.log(clockInMealTotal);
 }
 
 $(document).ready(function(){
