@@ -6,32 +6,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="row">
-    <div class="col s12 m6">
-      <div class="card grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Clock Out Time Calculator</span>
-  <a>
-    Clock in time:
-    <input type="text" id = "clockIn" class="timepicker">
+    <body>
 
-    Clock out lunch time:
-    <input type="text" id = "clockOutMeal" class="timepicker">
+      <div class="container">
+        <div class="row">
+          <div class="s12 m6 l3">
+            <div class="card grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Clock Out Time Calculator</span>
+                  <a>
+                    Clock in time:
+                    <input type="text" id = "clockIn" class="timepicker">
 
-    Clock in lunch time:
-    <input type="text" id = "clockInMeal" class="timepicker">
+                    Clock out lunch time:
+                    <input type="text" id = "clockOutMeal" class="timepicker">
 
-<b class="waves-effect waves-light btn red">Calculate</b>
+                    Clock in lunch time:
+                    <input type="text" id = "clockInMeal" class="timepicker">
 
-    Your Clock out time is:
-    <input type = "text" id = "hh">
-  </a>
-      </div>
-    </div>
-  </div>
-</div>
-  <script type = "text/javascript" src="main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-  </body>
-  </html>
+                    <b class="btn red" id="button" onclick="calc()">Calculate</b><br>
+                    
+                    <span id="message"></span>
+                    <span id= "hh"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <script type = "text/javascript" src="main.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+        </body>
+      </html>

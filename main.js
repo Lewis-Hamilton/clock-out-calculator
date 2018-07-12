@@ -30,9 +30,10 @@ function calc()
   var clockOutHourFinal = clockOutHour - 12;
 
   var clockOutTime = clockOutHourFinal + ":" + clockOutMin;
+  var message = "Your clock out time is:"
 
-  document.getElementById('hh').value = clockOutTime;
-
+  document.getElementById('message').innerHTML = message;
+  document.getElementById('hh').innerHTML = clockOutTime;
 }
 
 $(document).ready(function(){
