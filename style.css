@@ -1,3 +1,55 @@
+
+body {
+  background-image: url("background.jpg");
+}
+c {
+  position: relative;
+  left: 220px;
+  color: white;
+  font-size: 50;
+
+}
 a {
   color: white;
+  font-size: 30;
 }
+
+.timepicker-plate {
+  background: #808080;
+}
+
+.timepicker-tick {
+  color: white;
+}
+
+.timepicker-digital-display{
+	background: #808080;
+}
+
+.timepicker-close{
+	color: #808080;
+}
+
+.timepicker-canvas-bg{
+	fill: #FF0000;
+}
+
+.timepicker-canvas-bearing
+							{
+	fill: #FF0000;
+	color: #FF0000;
+}
+
+.timepicker-canvas line{
+	stroke: #FF0000 !important;
+}
+
+/* label focus color */
+ .input-field input:focus + label {
+   color: #FF0000 !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid #FF0000 !important;
+   box-shadow: 0 1px 0 0 #87ACFF !important
+ }
