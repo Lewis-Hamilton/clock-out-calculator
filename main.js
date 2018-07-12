@@ -1,16 +1,29 @@
 function calc()
 {
-  var f1 = document.getElementById('f1').value;
-  var f2 = document.getElementById('f2').value;
-  var f3 = document.getElementById('f3').value;
+  var clockIn             = document.getElementById('clockIn').value;
+  var clockOutMeal        = document.getElementById('clockOutMeal').value;
+  var clockInMeal         = document.getElementById('clockInMeal').value;
 
-  var f4 = f3 - f2;
-  var f5 = f4 + f1;
-  var f6 = f5 + 8;
+  var clockInHours        = clockIn.slice(0, 2);
+  var clockOutMealHours   = clockOutMeal.slice(0, 2);
+  var clockInMealHours    = clockInMeal.slice(0, 2);
 
-  document.getElementById('f7').value = f6;
+  var clockInHourMin      = clockInHours * 60;
+  var clockOutMealHourMin = clockOutMealHours * 60;
+  var clockInMealHourMin  = clockInMealHours * 60;
+
+  var clockInMin          = clockIn.slice(3, 6);
+  var clockOutMealMin     = clockOutMeal.slice(3, 6);
+  var clockInMealMin      = clockInMeal.slice(3, 6);
+
+
+
+  // document.getElementById('clockOut').value = f6;
+
+  console.log(clockInHourMin);
+  console.log(clockOutMealHourMin);
+  console.log(clockInMealHourMin);
 }
-
 
 $(document).ready(function(){
     $('.timepicker').timepicker();
